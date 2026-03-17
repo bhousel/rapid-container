@@ -32,7 +32,10 @@
       newScript.type = 'text/javascript';
       newScript.onload = checkScript;
       newScript.onerror = checkScript;
-      newScript.src = 'js/rapid.min.js';
+      // TODO:  Note that minification will be a predeploy step going forward.
+      // There is currently no `rapid.min.js` file, so just use the full `rapid-dev.js` build for now.
+      // newScript.src = 'js/rapid.min.js';
+      newScript.src = 'js/rapid-dev.js';
 
       document.getElementsByTagName('head')[0].appendChild(newScript);
 
