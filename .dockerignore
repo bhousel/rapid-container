@@ -1,0 +1,4 @@
+# Exclude everything except the pre-built dist/
+*
+!dist/
+!dist/**

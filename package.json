@@ -1,0 +1,31 @@
+{
+  "name": "rapid-container",
+  "version": "0.0.1",
+  "description": "A container for Rapids",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhousel/rapid-container.git"
+  },
+  "homepage": "https://rapideditor.org",
+  "keywords": [
+    "editor",
+    "openstreetmap"
+  ],
+  "license": "ISC",
+  "type": "module",
+  "main": "dist/rapid.min.js",
+  "scripts": {
+    "all": "sh ./scripts/clean.sh && sh ./scripts/build.sh",
+    "clean": "sh ./scripts/clean.sh",
+    "build": "sh ./scripts/build.sh"
+  },
+  "dependencies": {
+    "rapid2": "npm:@rapideditor/rapid@^2.5.6",
+    "rapid3": "file:../rapid"
+  },
+  "devDependencies": {},
+
+  "publishConfig": {
+    "access": "public"
+  }
+}
