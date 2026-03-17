@@ -1,1 +1,16 @@
-/Users/bryan/Projects/rapid/dist/land.html
+<!DOCTYPE html>
+<html>
+<!--
+This file serves as the 'redirect_uri' to complete the OAuth handshake.
+It receives the authorization code and closes its own window.
+-->
+  <head></head>
+  <body>
+    <script>
+      if (new URLSearchParams(location.search).has("code")) {
+        new BroadcastChannel("osm-api-auth-complete").postMessage(location.href);
+        window.close();
+      }
+    </script>
+  </body>
+</html>

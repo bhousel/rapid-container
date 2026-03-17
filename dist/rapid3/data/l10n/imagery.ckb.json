@@ -1,1 +1,9 @@
-/Users/bryan/Projects/rapid/dist/data/l10n/imagery.ckb.json
+{
+  "ckb": {
+    "imagery": {
+      "MAPNIK": {
+        "name": "OpenStreetMap (پێوانەیی)"
+      }
+    }
+  }
+}

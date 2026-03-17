@@ -1,1 +1,10 @@
-/Users/bryan/Projects/rapid/dist/data/l10n/community.sl.json
+{
+  "sl": {
+    "cape-coast-youthmappers": {
+      "description": "Sledi nam na Twitterju: {url}"
+    },
+    "OSMF": {
+      "name": "Fundacija OpenStreetMap"
+    }
+  }
+}

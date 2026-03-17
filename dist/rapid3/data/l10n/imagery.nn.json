@@ -1,1 +1,29 @@
-/Users/bryan/Projects/rapid/dist/data/l10n/imagery.nn.json
+{
+  "nn": {
+    "imagery": {
+      "EsriWorldImagery": {
+        "attribution": {
+          "text": "Vilkår og tilbakemelding"
+        }
+      },
+      "EsriWorldImageryClarity": {
+        "attribution": {
+          "text": "Vilkår og tilbakemelding"
+        }
+      },
+      "MAPNIK": {
+        "name": "OpenStreetMap (standard)"
+      },
+      "Mapbox": {
+        "attribution": {
+          "text": "Vilkår og tilbakemelding"
+        }
+      },
+      "mapbox_locator_overlay": {
+        "attribution": {
+          "text": "Vilkår og tilbakemelding"
+        }
+      }
+    }
+  }
+}

@@ -1,1 +1,7 @@
-/Users/bryan/Projects/rapid/dist/data/l10n/community.af.json
+{
+  "af": {
+    "_communities": {
+      "openstreetmapafrica": "OpenStreetMap Afrika"
+    }
+  }
+}
