@@ -1,7 +1,7 @@
-
 # rapid-container
 
 This repository packages multiple versions of [Rapid](https://rapideditor.org) (a front-end OSM editor) into a single nginx Docker container, serving them as static files.
+
 
 ## How it works
 
@@ -11,11 +11,12 @@ This repository packages multiple versions of [Rapid](https://rapideditor.org) (
 - `./dist/` is **gitignored** on development branches to avoid churn; it is committed only on dedicated release branches
 - The Dockerfile is intentionally minimal: it just copies `./dist/` into an nginx image
 
+
 ## Deployment context
 
 This repo is referenced by [`workspaces-stack`](https://github.com/TaskarCenterAtUW/workspaces-stack) (a separate repo), which `git clone`s this project and builds the Docker image via `docker-compose.build.yml`. No build happens inside Docker — the pre-built `dist/` is all that's needed.
 
-See the [RELEASE.md](RELEASE.md) for the release workflow.
+See the [RELEASE.md](RELEASE.md) for the release checklist.
 
 
 ## Developer workflow
@@ -24,8 +25,12 @@ See the [RELEASE.md](RELEASE.md) for the release workflow.
 npm install        # or bun/yarn/pnpm — any package manager works
 sh ./scripts/build.sh   # populates ./dist/
 docker build -t rapid-container .
-docker run -p 8080:80 rapid-container  # test at localhost:8080/rapid2/ and /rapid3/
+docker run --rm -p 8080:80 rapid-container  # test at localhost:8080/rapid2/ and /rapid3/
 ```
+You should be able to access:
+- http://localhost:8080/rapid2/
+- http://localhost:8080/rapid3/
+
 
 ## License
 
